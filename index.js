@@ -1,14 +1,3 @@
-const updatePhysicsEngine = (mode) => {
-  const background = mode === "dark" ? "#000" : "#fff";
-  render.options.background = background;
-  leftWall.render.fillStyle =
-    rightWall.render.fillStyle =
-    topWall.render.fillStyle =
-    bottomWall.render.fillStyle =
-    ground.render.fillStyle =
-      background;
-};
-
 //theme
 const matcher = window.matchMedia("(prefers-color-scheme: dark)");
 if (
@@ -31,8 +20,6 @@ document.getElementById("enable_light_mode").addEventListener("click", () => {
   updatePhysicsEngine("light");
 });
 
-const isDarkMode = () => localStorage.getItem("data-color-mode") === "dark";
-
 // Initialize Matter.js
 const Engine = Matter.Engine,
   Render = Matter.Render,
@@ -52,7 +39,7 @@ const render = Render.create({
     width: 400,
     height: 300,
     wireframes: false,
-    background: isDarkMode() ? "#000" : "#fff",
+    background: "transparent"
   },
 });
 
@@ -75,7 +62,7 @@ for (let i = 0; i <= 6; i++) {
 const wallOptions = {
   isStatic: true,
   render: {
-    fillStyle: isDarkMode() ? "#000" : "#fff",
+    fillStyle: "transparent"
   },
 };
 const leftWall = Bodies.rectangle(0, 400 / 2, 20, 400, wallOptions);
