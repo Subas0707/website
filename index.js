@@ -26,7 +26,7 @@ const techStack = [];
 
 for (let i = 0; i <= 7; i++) {
   techStack.push(
-    Bodies.rectangle(200+(i*3), 200+(i*3), 45, 45, {
+    Bodies.rectangle(200+(i*3), 20+(i*3), 45, 45, {
       render: {
         sprite: {
           texture: `./assets/svg/techStack${i}.svg`,
