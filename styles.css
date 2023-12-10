@@ -49,6 +49,10 @@ a,
   color: var(--secondary-text);
 }
 
+.icons {
+  color: var(--secondary-text);
+}
+
 .content {
   max-width: 800px;
   margin: 24px auto;
@@ -156,7 +160,6 @@ a,
 .social-icons:hover .fa-brands {
   color: var(--secondary-text) / 0.9;
   cursor: pointer;
-  transition: 0.3s ease-in-out;
 }
 
 .services {
