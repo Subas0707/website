@@ -9,6 +9,7 @@ const updatePhysicsEngine = (mode) => {
       background;
 };
 
+//theme
 const matcher = window.matchMedia("(prefers-color-scheme: dark)");
 if (
   localStorage.getItem("data-color-mode") === "dark" ||
@@ -114,3 +115,13 @@ Matter.Runner.run(engine);
 
 // Run the renderer
 Render.run(render);
+
+// form
+const message = document.querySelector(".message");
+const submitBtn = document.querySelector(".send-button");
+
+submitBtn.addEventListener("click", () => {
+  if (message.value.lenght >= 10) {
+    window.location.href = `mailto:pradish@sandbox.com.np?subject=Sandbox.com.np!&body=${message.value}!`;
+  }
+});
