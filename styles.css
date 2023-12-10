@@ -47,6 +47,7 @@ a,
 .fa-solid,
 .fa-regular {
   color: var(--secondary-text);
+  text-decoration: none;
 }
 
 .icons {
@@ -74,7 +75,7 @@ a,
   border: 1px solid var(--border-color);
   border-radius: 20px;
   padding: 48px;
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(1.5px);
 }
 
 .intro {
@@ -93,6 +94,12 @@ a,
   height: 48px;
   border-radius: 10px;
   position: relative;
+}
+
+.inline-gap-10 {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .logo {
@@ -115,30 +122,32 @@ a,
     rgb(255, 0, 183) 0%,
     rgb(30, 0, 255) 100%
   );
-  padding: 2px;
-  border-radius: 10px;
-  backdrop-filter: blur(1px);
-}
-
-.about-us-content {
-  border-radius: 8px;
   padding: 32px;
+  border-radius: 10px;
+  backdrop-filter: blur(1.5px);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.about-us-content p {
+.about-us a,
+.about-us p {
   color: #fff;
 }
 
-.about-us-content a {
-  color: #fff;
+.about-email {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
 }
 
-.about-us-content a:hover {
-  color: #ececec;
+.email-icon {
+  font-size: 12px;
+  margin-top: 2px;
 }
 
-.about-us-content a {
-  text-decoration: underline;
+.email-link:hover {
+  color: #e9e8e8de;
 }
 
 .socials {
@@ -154,11 +163,11 @@ a,
   display: flex;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(1.5px);
 }
 
 .social-icons .fa-brands {
-  font-size: 32px;
+  font-size: 42px;
 }
 
 .social-icons:hover .fa-brands {
@@ -171,7 +180,7 @@ a,
   gap: 24px;
   flex-direction: column;
   padding: 32px;
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(1.5px);
 }
 
 .services-list {
@@ -185,7 +194,8 @@ a,
   font-weight: 500;
 }
 
-.service-item {
+.service-item,
+.link-item {
   display: inline-flex;
   align-items: center;
   gap: 12px;
@@ -195,6 +205,17 @@ a,
   font-size: 14px;
 }
 
+.links-list {
+  display: inline-flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.link-item:hover i,
+.link-item:hover p {
+  color: #e9e8e8de;
+}
+
 .contact-us {
   border: 1px solid var(--border-color);
   border-radius: 20px;
@@ -202,7 +223,7 @@ a,
   display: flex;
   flex-direction: column;
   gap: 24px;
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(1.5px);
 }
 
 .contact-us-header {
@@ -211,7 +232,8 @@ a,
   gap: 6px;
 }
 
-.contact-us-header h3 {
+.contact-us-header h3,
+.links h3 {
   font-size: 18px;
   font-weight: 500;
 }
@@ -254,7 +276,7 @@ a,
 }
 
 .color_mode_button {
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(1.5px);
   background: transparent;
   width: 100%;
   height: 100%;
@@ -276,7 +298,7 @@ a,
 
 .tech-stack-wrapper {
   overflow: hidden;
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(1.5px);
 }
 
 .tech-stack-wrapper::before {
@@ -301,7 +323,7 @@ a,
   padding: 24px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 6px;
 }
 
 .tech-stack h3 {
@@ -361,8 +383,7 @@ a,
 .canvas-physics {
   width: 100%;
   border-radius: 20px;
-  backdrop-filter: blur(1px);
-  background: transparent;
+  backdrop-filter: blur(0);
 }
 
 .canvas-physics canvas {

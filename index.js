@@ -1,25 +1,3 @@
-//theme
-const matcher = window.matchMedia("(prefers-color-scheme: dark)");
-if (
-  localStorage.getItem("data-color-mode") === "dark" ||
-  (matcher.matches && !localStorage.getItem("data-color-mode"))
-) {
-  document.documentElement.setAttribute("data-color-mode", "dark");
-  localStorage.setItem("data-color-mode", "dark");
-}
-
-document.getElementById("enable_dark_mode").addEventListener("click", () => {
-  document.documentElement.setAttribute("data-color-mode", "dark");
-  localStorage.setItem("data-color-mode", "dark");
-  updatePhysicsEngine("dark");
-});
-
-document.getElementById("enable_light_mode").addEventListener("click", () => {
-  document.documentElement.setAttribute("data-color-mode", "light");
-  localStorage.setItem("data-color-mode", "light");
-  updatePhysicsEngine("light");
-});
-
 // Initialize Matter.js
 const Engine = Matter.Engine,
   Render = Matter.Render,
@@ -48,7 +26,7 @@ const techStack = [];
 
 for (let i = 0; i <= 6; i++) {
   techStack.push(
-    Bodies.rectangle(200, 200, 45, 45, {
+    Bodies.rectangle(200+(i*2), 200+(i*2), 45, 45, {
       render: {
         sprite: {
           texture: `./assets/svg/techStack${i}.svg`,
