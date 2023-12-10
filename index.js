@@ -107,8 +107,7 @@ Render.run(render);
 const message = document.querySelector(".message");
 const submitBtn = document.querySelector(".send-button");
 
-submitBtn.addEventListener("click", (e) => {
-  e.preventDefault()
+submitBtn.addEventListener("click", () => {
   if (message.value.length >= 10) {
     window.location.href = `mailto:pradish@sandbox.com.np?subject=Sandbox.com.np!&body=${message.value}!`;
   }
