@@ -141,11 +141,6 @@ a,
   flex-direction: column;
 }
 
-.email-icon {
-  font-size: 12px;
-  margin-top: 2px;
-}
-
 .email-link:hover {
   color: #e9e8e8de;
 }
