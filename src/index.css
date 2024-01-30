@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Dai+Banna+SIL:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 224 71.4% 4.1%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 224 71.4% 4.1%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 224 71.4% 4.1%;
+
+  --primary: 220.9 39.3% 11%;
+  --primary-foreground: 210 20% 98%;
+
+  --secondary: 220 14.3% 95.9%;
+  --secondary-foreground: 220.9 39.3% 11%;
+
+  --muted: 220 14.3% 95.9%;
+  --muted-foreground: 220 8.9% 46.1%;
+
+  --accent: 220 14.3% 95.9%;
+  --accent-foreground: 220.9 39.3% 11%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 20% 98%;
+
+  --border: 220 13% 91%;
+  --input: 220 13% 91%;
+  --ring: 224 71.4% 4.1%;
+
+  --radius: 0.5rem;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.text-muted-foreground {
+  color: hsl(var(--muted-foreground));
+}
+
+.text-primary-foreground {
+  color: hsl(var(--primary-foreground));
+}
+
+.text-secondary-foreground {
+  color: hsl(var(--secondary-foreground));
+}
+
+.bg-background {
+  background: hsl(var(--background));
+}
+
+.bg-secondary {
+  background: hsl(var(--secondary));
+}
+
+.bg-primary-80 {
+  background: hsl(var(--primary) / 0.8);
+}
+
+.text-accent {
+  color: hsl(var(--accent));
+}
+
+.outline-button:hover {
+  background: hsl(var(--accent));
+}
+
+.outline-button:hover .icon {
+  color: hsl(var(--accent-foreground));
+}
+
+.hover-badge:hover {
+  background: hsl(var(--primary) / 0.6);
+}
+
+.title {
+  font-family: Inter;
+}
+
+.follow-img {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  max-width: 220px;
+  box-sizing: border-box;
+  transition: ease 0.2s ease;
+  top: -150px;
+  left: 0;
+  z-index: 1;
+}
+
+@media (min-width: 1080px) {
+  .project-smurfx:hover .follow-img {
+    display: block;
+  }
+}
