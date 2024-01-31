@@ -89,22 +89,3 @@ body {
 .title {
   font-family: Inter;
 }
-
-.follow-img {
-  display: none;
-  position: absolute;
-  width: 100%;
-  height: auto;
-  max-width: 220px;
-  box-sizing: border-box;
-  transition: ease 0.2s ease;
-  top: -150px;
-  left: 0;
-  z-index: 1;
-}
-
-@media (min-width: 1080px) {
-  .project-smurfx:hover .follow-img {
-    display: block;
-  }
-}
