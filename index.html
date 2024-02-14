@@ -32,9 +32,9 @@
           Develop software that gives you a competitive edge using the latest technologies.
         </p>
         <p class="max-w-md items-center text-pretty font-mono text-xs text-muted-foreground">
-          <i class="fa-solid fa-globe text-[0.7rem] no-underline"></i>
           <a class="inline-flex gap-x-1.5 align-center leading-none hover:underline"
             href="https://www.google.com/maps/place/Pokhara" target="_blank">
+            <i data-lucide="globe" class="w-3 h-3 font-thin"></i>
             Pokhara, Nepal
           </a>
         </p>
@@ -44,7 +44,7 @@
             focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
             focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border 
             border-input bg-background hover:bg-accent hover:text-accent-foreground size-8">
-            <i class="fa-regular fa-envelope text-[1.0rem]"></i>
+            <i data-lucide="mail" class="h-4 w-4 icon"></i>
           </a>
           <a href="https://github.com/sandbox-pokhara" target="_blank" class="outline-button inline-flex items-center justify-center whitespace-nowrap 
             rounded-md text-sm font-medium ring-offset-background transition-colors 
@@ -587,5 +587,8 @@
   </main>
 </body>
 <script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
 
 </html>
