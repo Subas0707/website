@@ -34,14 +34,25 @@
                 <p class="items-center max-w-md font-mono text-xs text-pretty text-muted-foreground">
                     <a class="inline-flex gap-x-1.5 align-center leading-none hover:underline"
                         href="https://www.google.com/maps/place/Pokhara" target="_blank">
-                        <i data-lucide="globe" class="w-3 h-3 font-thin"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="w-3 h-3 font-thin">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                            <path d="M2 12h20"></path>
+                        </svg>
                         Pokhara, Nepal
                     </a>
                 </p>
                 <div class="flex pt-1 font-mono text-sm gap-x-1 text-muted-foreground print:hidden">
                     <a href="mailto:pradish@sandbox.com.np"
                         class="inline-flex items-center justify-center text-sm font-medium transition-colors border rounded-md outline-button whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-input bg-background hover:bg-accent hover:text-accent-foreground size-8">
-                        <i data-lucide="mail" class="w-4 h-4 icon"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="w-4 h-4">
+                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </svg>
                     </a>
                     <a href="https://github.com/sandbox-pokhara" target="_blank"
                         class="inline-flex items-center justify-center text-sm font-medium transition-colors border rounded-md outline-button whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-input bg-background hover:bg-accent hover:text-accent-foreground size-8">
@@ -596,9 +607,5 @@
         </section>
     </main>
 </body>
-<script src="https://unpkg.com/lucide@latest"></script>
-<script>
-    lucide.createIcons();
-</script>
 
 </html>
